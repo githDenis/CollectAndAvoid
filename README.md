@@ -31,7 +31,20 @@ Niagara effect of flash during picking up a coin
 Main character class:
 BP_Hero
 
+Objects classes:
+BP_Coin
 
+Classes for enemy:
+BP_Enemy
+BP_EnemyContoller
+BP_PatrolTargetPoint
+
+Engine object classes:
+BP_GameInstance
+BP_MyGameMode
+
+Music Manager class:
+BP_MusicManager
 
 
 ## Packing report:
@@ -58,3 +71,7 @@ https://www.cgtrader.com/
 2)Coins are placed on level by hands, not by BP_CoinSpawner; amount of coin was reduced to 14
 3)Text on won and lost screen was impoved. Green color in won screen and red color in lost screen
 4)Event dispatcher now process picking up a coin
+5)Coin material was changed
+6)Coin rotates now using Rotating Component, not in event Tick
+7)Now you can an ability to set enemy speed using a variable. I couldn't to apply this logic to Sight radius
+8)GameMode logic moved to GameState
