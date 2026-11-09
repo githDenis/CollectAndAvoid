@@ -79,6 +79,11 @@ UI classes:
    Prims: 118.8K
    # Most expensive items: Frame, Game, Input
 
+## The hardest part for me in this project
+One of the hardest part in this project for me was Enchanced Input System. This system is new for me because before
+I used old input system. So It took much time to understand how the system works.
+Another challenge was to build an UI architecture. I tried to distribute the responsibilities between different classes.
+
 ## Packing report:
 The game was packed successfully and i didn't find any mistake in game logic during testing.
 
