@@ -28,48 +28,72 @@ Camera shake while the player is sprinting, Niagara visual effect played when a 
 
 ## Blueprints description:
 Main character class:
-BP_Hero
+   BP_Hero - class of the main character in the game
 
 Objects classes:
-BP_Coin
+   BP_Coin - class of coin that the main character can collect
 
 Classes for enemy:
-BP_Enemy
-BP_EnemyContoller
-BP_PatrolTargetPoint
+   BP_Enemy - class of the enemy that can stop the game by touching the main character
+   BP_EnemyContoller - class of a brain of the enemy
+   BP_PatrolTargetPoint - class of a target point. The enemy uses these target points to patrol the area
 
 Engine object classes:
-BP_GameInstance
-BP_MyGameMode
+   BP_GameInstance - class of Game Instace which contains background music and current UI state
+   BP_MyGameMode - class of Game Mode which contains the main rules of the game
 
 Music Manager class:
-BP_MusicManager
+   BP_MusicManager - class which plays background music
 
+UI classes:
+   WBP_Button - class of button that is used for main menu
+   BP_MainHUD - main UI class that decides what to draw
+   WBP_MainMenu - class of main menu in menu level
+   WBP_MainWidget - class of main game widget
+   WBP_Lost - class for lost screen
+   WBP_Won - class for won screen
+   WBP_Pause - class for pause menu
 
 ## Performance report
-# Settings: Epic
-Lumen: On
-Virtual Shadow Maps: On
-Ray Tracing: Off
-FPS: 75-80
-
-# Settings: Epic
-Lumen: Off
-Virtual Shadow Maps: Off
-Ray Tracing: Off
-FPS: 85-90
+   # Settings: Epic
+   Lumen: On
+   Virtual Shadow Maps: On
+   Ray Tracing: Off
+   FPS: 75-80
+   # Settings: Epic
+   Lumen: Off
+   Virtual Shadow Maps: Off
+   Ray Tracing: Off
+   FPS: 85-95
+   # Profiling
+   FPS: 85-95
+   Frame: 16-17ms
+   Game: 10-12ms
+   Draw: 6-9ms
+   RHIT: 4.5-5ms
+   GPU Time: 5-5.5ms
+   Input: 13-14ms
+   Mem: 4.83Gb
+   RenderRes: 100%
+   Draws: 286-289
+   Prims: 118.8K
+   # Most expensive items: Frame, Game, Input
 
 ## Packing report:
 The game was packed successfully and i didn't find any mistake in game logic during testing.
 
-## Animation source:
-https://www.mixamo.com/
+### Resources:
+   ## Animation source:
+   https://www.mixamo.com/
+   https://www.adobe.com/legal/terms.html
 
-## Music source:
-https://pixabay.com/ru/
+   ## Music source:
+   https://pixabay.com/ru/
+   https://pixabay.com/service/license-summary/
 
-## Asset of coin source:
-https://www.cgtrader.com/
+   ## Asset of coin source:
+   https://www.cgtrader.com/
+   https://help.cgtrader.com/hc/en-us/sections/360004404438-Licenses-and-rights
 
 ## Link to the video:
 
