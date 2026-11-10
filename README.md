@@ -86,6 +86,11 @@ Another challenge was to build an UI architecture. I tried to distribute the res
 
 ## Packing report:
 The game was packed successfully and i didn't find any mistake in game logic during testing.
+But one mistake happened during the packing of project
+## Error message in log:
+UATHelper: Error: Packaging (Windows): LogCook: Error: GameInstanceClass contains a redirected reference '/Game/Blueprints/GameInstance/BP_GameInstane'. The intended asset will fail to load in a packaged build. Select the intended asset again in Project Settings to fix this issue.
+
+I solved this problem by choosing other class of GameInstance and then again choose BP_GameInstance
 
 ### Resources:
    ## Animation source:
