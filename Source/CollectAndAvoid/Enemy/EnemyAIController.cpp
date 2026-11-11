@@ -15,7 +15,6 @@ void AEnemyAIController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	RunBehaviorTree(BehaviorTree);
 	AIPerceptionComponent->OnTargetPerceptionUpdated.AddDynamic(this, &AEnemyAIController::PerceptionUpdated);
 }
 
@@ -31,6 +30,8 @@ void AEnemyAIController::OnPossess(APawn* pawn)
 
 	AIPerceptionComponent->ConfigureSense(*SightConfig);
 	SetPerceptionComponent(*AIPerceptionComponent);
+
+	RunBehaviorTree(BehaviorTree);
 }
 
 void AEnemyAIController::PerceptionUpdated(AActor* actor, FAIStimulus stimulus)
