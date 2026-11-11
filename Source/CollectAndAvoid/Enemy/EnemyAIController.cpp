@@ -37,7 +37,6 @@ void AEnemyAIController::PerceptionUpdated(AActor* actor, FAIStimulus stimulus)
 {
 	bool success = stimulus.WasSuccessfullySensed();
 	Blackboard->SetValueAsBool(WasCharacterSeenKeyName, success);
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Red, FString::Printf(TEXT("%d"), success));
 
 	if (success)
 	{

@@ -136,3 +136,4 @@ I solved this problem by choosing other class of GameInstance and then again cho
    ProjectName=CollectAndAvoid
 12)Text correction in Cast check section and effects section
 13)Now you have an ability to set enemy sight radius using a variable.
+14)Added dark grey background to score and target score
