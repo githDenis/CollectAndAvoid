@@ -106,7 +106,7 @@ I solved this problem by choosing other class of GameInstance and then again cho
    https://help.cgtrader.com/hc/en-us/sections/360004404438-Licenses-and-rights
 
 ## Link to the video:
-
+https://drive.google.com/drive/u/0/folders/1kO76kPmiGYLXNCwJDZ8Jee9d01cDts6m
 
 # How to run the build:
 1)Open Windows\
