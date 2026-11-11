@@ -26,16 +26,16 @@ Update score function isn't called in Tick function because this is bad for perf
 ## Additional effects:
 Camera shake while the player is sprinting, Niagara visual effect played when a coin is collected
 
-## Blueprints description:
+## Classes description:
 Main character class:
-   BP_Hero - class of the main character in the game
+   BP_Hero - Blueprint class implemented from AHere(C++ class). Class of the main character in the game
 
 Objects classes:
    BP_Coin - class of coin that the main character can collect
 
 Classes for enemy:
    BP_Enemy - class of the enemy that can stop the game by touching the main character
-   BP_EnemyContoller - class of a brain of the enemy
+   BP_EnemyContoller - Blueprint class implemented from EnemyAIController(C++ class). Class of a brain of the enemy
    BP_PatrolTargetPoint - class of a target point. The enemy uses these target points to patrol the area
 
 Engine object classes:
@@ -119,7 +119,7 @@ I solved this problem by choosing other class of GameInstance and then again cho
 4)Event dispatcher now process picking up a coin
 5)Coin material was changed
 6)Coin rotates now using Rotating Component, not in event Tick
-7)Now you can an ability to set enemy speed using a variable. I couldn't to apply this logic to Sight radius
+7)Now you have an ability to set enemy speed using a variable.
 8)GameMode logic moved to GameState
 9)In E_GameState descriptions of elements were renaimed from 0, 1, 2 to Playing, Won, Lost
 10)Lumend and Virtual Shadow Maps were disabled
@@ -135,3 +135,4 @@ I solved this problem by choosing other class of GameInstance and then again cho
    Renamed in DefaultGame.ini:
    ProjectName=CollectAndAvoid
 12)Text correction in Cast check section and effects section
+13)Now you have an ability to set enemy sight radius using a variable.
